@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+        <title>显示IP</title>
+    </head>
+    <body>
+        <input type="button" onclick="showip();" value="IP">
+        <script>
+            function showip(){
+                alert("IP:"+returnCitySN['cip'] + "adr:" + returnCitySN["cname"]);
+            }
+        </script>
+    </body>
+</html>
