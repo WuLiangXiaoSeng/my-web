@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>镂空</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>wuliangxiaoseng<br/>shayebushi</h1>
+<div class="background"><span>WLXS</span></div>
+<h2>
+    I don't know what I'm talking about, but I just say something, otherwise it's empty.
+    There had to be something here, and I couldn't figure out what to put in there, so this is it.
+</h2>
+<h2>
+    I don't know what I'm talking about, but I just say something, otherwise it's empty.
+    There had to be something here, and I couldn't figure out what to put in there, so this is it.
+</h2>
+<h2>
+    I don't know what I'm talking about, but I just say something, otherwise it's empty.
+    There had to be something here, and I couldn't figure out what to put in there, so this is it.
+</h2>
+<script>
+    const background = document.querySelector(".background")
+    document.addEventListener("scroll", () =>{
+        const scrollY = window.scrollY;
+        if(scrollY !== 0){
+            background.style.backgroundPosition = `calc(50% + ${scrollY}px) calc(50% + ${scrollY}px)`;
+        }else{
+            background.style.backgroundPosition = "";
+        }
+    })
+</script>
+</body>
+</html>
