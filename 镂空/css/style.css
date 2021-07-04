@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     height: 200vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .background{
@@ -19,7 +19,7 @@ body{
     overflow: hidden;
 }
 
-.background:before{
+.background::before{
     content: "";
     background-size: cover;
     background-image: inherit;
@@ -48,6 +48,6 @@ h2{
     color: #fff;
     left: 50%;
     transform: translateX(-50%);
-    padding: 20px;
+    padding: 30px;
     background-color: rgba(0, 0, 0, 0.3);
 }
